@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="swApp">
+<head>
+	<base href="/">
+	<meta charset="UTF-8">
+	<title>Swapi</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+	<nav>
+			<a href="/people">People</a>
+			<a href="/planets">Planets</a>
+			<a href="/vehicles">Vehicles</a>
+			<a href="/starships">Starships</a>
+			<a href="/species">Species</a>
+	</nav>
+</header>
+<main ng-view></main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-animate.min.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/components/starWarsComponent/starWars.component.js"></script>
+<script src="app/factories/sw.factory.js"></script>
+<script src="app/routes/routes.js"></script>
+</body>
+</html>

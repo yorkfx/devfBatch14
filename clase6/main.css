@@ -1,0 +1,80 @@
+body{
+	height:98vh;
+	overflow: hidden;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+ul li{
+	display:block;
+	width: 80px;
+	float: right;
+}
+h1{
+	width: 500px;
+	height:160px;
+	margin: 140px auto 10px;
+	background-image: url("https://www.google.com.mx/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 0;
+	-webkit-background-size: 60%;
+	background-size: 60%;
+}
+h1:after{
+	content: "México";
+	display: block;
+	position: relative;
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	color: blue;
+	font-family: sans-serif;
+	font-weight: lighter;
+	left: 342px;
+	top: 114px
+}
+input[type="text"]{
+	width:45%;
+	margin: 0 auto;
+	padding: 12px;
+	display: block;
+	font-size: 1em;
+	background-image: url(icon.png);
+	background-repeat: no-repeat;
+	background-position: 98% center;
+	border:1px solid silver;
+}
+div{
+	display: block;
+	text-align: center;
+}
+
+.arriba p{
+	display: inline-block;
+}
+.arriba{
+	text-align: right;
+}
+button{
+	display: inline-block;
+	width: 170px;
+	padding: 10px 0;
+	margin: 18px 10px;
+    border:1px solid  rgba(198, 198, 198,.4);
+    background-color: rgba(198,198,198,.4);
+	color: #888;
+	font-weight: bolder;
+	font-size: 13px;
+}
+p{
+	font-size: 14px;
+
+}
+
+footer{
+
+}
+
+

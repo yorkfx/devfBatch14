@@ -1,0 +1,13 @@
+<div class="flip-container" ng-repeat="tr in $ctrl.tracks.track | limitTo: 24">
+	<div class="flipper">
+		<div class="front">
+			<img ng-src="{{tr.image[3]['#text']}}" alt="" title="{{tr.name}}">
+		</div>
+		<div class="back">
+			<h2>{{tr.name}}</h2>
+			<a href="{{tr.url}}">Escuchar</a>
+			<h2>{{tr.artist.name}}</h2>
+			<a href="{{tr.artist.url}}">Ver artista</a>
+		</div>
+	</div>
+</div>

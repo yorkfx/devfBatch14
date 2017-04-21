@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clashApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<base href="/">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<h1>Dev.f Batch 14</h1>
+	<div class="col-izq">
+	<img src="http://www.clashapi.xyz/images/cards/arrows.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/bomber.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/archers.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/knight.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/fireball.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/musketeer.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/giant.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/prince.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/baby-dragon.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/goblins.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/witch.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/skeletons.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/tombstone.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/bomb-tower.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/cannon.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/barbarians.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/rocket.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/rage.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/minion-horde.png" alt="" class="card">
+	<img src="http://www.clashapi.xyz/images/cards/inferno-tower.png" alt="" class="card">
+
+		
+	</div>
+	<div class="col-der">
+		<h2>Arrows</h2>
+		<p>Arrows pepper a large area, damaging everyone hit. Reduced damage to Crown Towers</p>
+		<dl>
+			<dt>Rarity</dt>
+			<dt>Type</dt>
+			<dt>Arena</dt>
+			<dt>Costo</dt>
+			<dd>{{rarity}}</dd>
+			<dd>{{type}}</dd>
+			<dd>{{arena}}</dd>
+			<dd>{{elixirCost}}</dd>
+		</dl>
+	</div>
+	<ul id="cards" ng-repeat="card in $ctrl.cards">
+		<li><a href="/{{card.idName}">{{card.name}}</a></li>
+	</ul>
+<div id="squeleton1"></div>
+<div id="squeleton2"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="component.js"></script>
+<script src="factory.js"></script>
+<script src="routes.js"></script>
+
+</body>
+</html>

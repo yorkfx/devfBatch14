@@ -1,0 +1,15 @@
+<h2>Marvel</h2>
+<div class="row">
+	<div class="col s12 m3" ng-repeat="hero in $ctrl.superheros" style="height:100vh">
+		<div class="card">
+			<div class="card-image">
+				<img ng-src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="">
+				<div class="card-title">{{hero.name}}</div>
+			</div>
+			<div class="card-content">
+				<h5>{{hero.description}}</h5>
+				<p>{{hero.available}}</p>	
+			</div>
+		</div>
+	</div>
+</div>

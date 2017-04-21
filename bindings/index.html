@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/components/helloComponent/hello.component.js"></script>
+</head>
+<body ng-controller="homeCtrl as home">
+
+<hello-component country="'Estados Unidos'"
+ ng-repeat="user in home.users" 
+ name="user.name">
+
+ </hello-component>
+	
+</body>
+</html>
