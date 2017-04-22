@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+}
+input[type="text"]{
+	width: 60%;
+	padding:10px 10px;
+	border-bottom: 1px solid silver;
+	background-color: #000;
+	color: #fff;
+	font-size: 1.3em;
+}
+button{
+	padding: 12px 10px;
+	border: 1px solid #1ed660;
+	background-color: #000;
+	color: #1ed660;
+	font-size: 1.3em;
+}
 
 body {
     background-color: #000;
@@ -7,62 +27,35 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
 }
-
-.flip-container {
-    perspective: 1000;
+.flip{
     display: inline-block;
-    margin-left: -5px;
-    margin-top: -5px;
-}
-
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-    transform: rotateY(180deg);
-}
-
-.flip-container,
-.front,
-.back {
-    width: 324px;
-    height: 320px;
-}
-.front img{
-	margin-top: 10px;
-	width: 100%;
-	height: 320px;
-}
-.flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
+    width: 32%;
+    height: 400px;
+    vertical-align: top;
     position: relative;
+    }
+.flip img{
+	width: 100%;
+	height: auto;
 }
-
-.front,
-.back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
+.flip:hover .back{
+	height: 250px;
+	
 }
-
-.front {
-    top: -10px;
-    z-index: 2;
+.back{
+	transition: all .5s ease-in-out;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0px;
+	font-size: 1.2em;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
-
-.back {
-    transform: rotateY(180deg);
-    background: #000;
-    text-align: center;
-}
-.back h2{
-	margin-top: 40px;
-}
-.back a{
-	background-color: #fff;
-	color: #000;
-	border: 1px solid white;
-	border-radius: 20px;
-	padding: 10px 16px;
-	text-decoration: none;
+.back span{
+	margin-top: 300px;
 }
